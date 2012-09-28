@@ -28,3 +28,8 @@ That's all^-^
 [人人网](http://www.renren.com/pantaovay/)
 [新浪微博](http://weibo.com/pantaovay/)
 
+[Original WP Blog](http://www.godtao.tk/)
+
+---
+
+Power by [Markdown](http://daringfireball.net/projects/markdown/), [GitHub](https://github.com/), [Ruby](http://www.ruby-lang.org/en/), and [jekyll](https://github.com/mojombo/jekyll).
