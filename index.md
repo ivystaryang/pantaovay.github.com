@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: 涛神的乌托邦
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
@@ -43,4 +43,9 @@ Here's a sample "posts list".
 This theme is still unfinished. If you'd like to be added as a contributor, [please fork](http://github.com/plusjade/jekyll-bootstrap)!
 We need to clean up the themes, make theme usage guides with theme-specific markup examples.
 
+## Find Me elsewhere
+
+[人人网](http://www.renren.com/pantaovay/)
+
+[新浪微博](http://weibo.com/pantaovay/)
 
