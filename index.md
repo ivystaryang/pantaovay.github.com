@@ -5,7 +5,8 @@ tagline: Supporting tagline
 ---
 {% include JB/setup %}
 ## About Me
-![Pan Tao](./assets/images/header.png)
+![Pan Tao](http://pantaothu2-github.stor.sinaapp.com/images/header.jpg)
+
 **Pan Tao**
 
 Student of IE, Tsinghua University
