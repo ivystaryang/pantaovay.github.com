@@ -25,8 +25,8 @@ That's all^-^
 
 ## Find Me elsewhere
 
-[人人网](http://www.renren.com/pantaovay/)
-[新浪微博](http://weibo.com/pantaovay/)
+[RenRen](http://www.renren.com/pantaovay/)
+[Weibo](http://weibo.com/pantaovay/)
 
 [Original WP Blog](http://www.godtao.tk/)
 
