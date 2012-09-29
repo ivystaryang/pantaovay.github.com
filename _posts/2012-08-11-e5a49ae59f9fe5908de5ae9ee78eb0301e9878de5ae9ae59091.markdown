@@ -1,0 +1,17 @@
+---
+comments: true
+date: 2012-08-11 14:47:11
+layout: post
+slug: '%e5%a4%9a%e5%9f%9f%e5%90%8d%e5%ae%9e%e7%8e%b0301%e9%87%8d%e5%ae%9a%e5%90%91'
+title: 多域名实现301重定向
+wordpress_id: 194
+categories:
+- web
+- 编程
+tags:
+- 301重定向
+- apache
+- iis
+- seo
+---
+

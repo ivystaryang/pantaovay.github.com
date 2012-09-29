@@ -1,0 +1,57 @@
+---
+comments: true
+date: 2012-08-26 22:50:31
+layout: post
+slug: '%e6%88%91%e8%a6%81%e5%bc%ba%e8%bf%ab%e8%87%aa%e5%b7%b1%e5%86%99%e5%8d%9a'
+title: 我要强迫自己写博
+wordpress_id: 261
+categories:
+- 日记
+- 生活随笔
+---
+
+最近，又是不爽。
+
+我就没有爽过。
+
+首先，这三次的pro/e作业一直不给力，幸好有大阳神帮忙。但是，我心里是很不是滋味的。nnd，后续的pro/e上机课，lz一定要每次坐前排，好好听课，跟上老师的鼠标点击速度。我就是不信邪。
+
+其次，ioptimize总算在一周的业余时间里搞定了，我不得不说，之前的代码——写的——很挫。。。用php封装确实减少了很多之后的麻烦——话说，这是传说中的重构吗？ 咳咳，不yy![:twisted:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_twisted.gif)。向姜海老师汇报的时候，得到的是肯定，不过我总是觉得现在的版本缺少什么东西。或许是整个架构不清晰，或许正如我所吐槽的：这货不是web2.0时代应该的官网……对于公司的官网，我向来是觉得中国很多公司官网挫的不行![:mrgreen:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_mrgreen.gif)。唯一一个让我心动的是华为的官网，不过你不能拿一些互联网公司的官网来和我理论，它们的主业就是这个，不专业的话，岂不是要被吐槽到死……想想那些传统制造业的公司官网吧，比如卖机械的、卖导航仪的。貌似偏离话题。总之，我想表达的意思是，我不想让我们的ioptimize沦为过气的网站，不然真对不起我们的宣言：we are trying our best to make the world better。所以，我跟姜老师说，我们用wp吧，找个企业版主题，修修补补，应该比现在的版本好。然后就有现在的这两个版本：
+
+
+
+	
+  1. http://1.ioptimize.sinaapp.com/
+
+	
+  2. http://2.ioptimize.sinaapp.com/（wp版）
+
+
+不得不说，以上两个我——没——有——一个——喜欢的。wp改到最后我都要哭了。为了一个效果，调来调去，以至于我发誓：以后一定不写前端的代码。姜老师，赐我一个大前端吧！或者，把炳程小学弟改造一下，我很看好炳程小学弟的说。![:twisted:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_twisted.gif)不管怎么吐槽，现在是一条道走到黑了，研究研究wp的架构，慢慢改，大不了自己写一个主题。
+
+再其次，走楼梯和大阳神嬉戏不小心把我的屌丝专用手机摔了，一直是不能找到micro sd着实把我吓了一跳。我当时竟然真的yy了一下手机摔残了的美好场景。中国有句话叫旧的不去，新的不来。我可以买galaxy III或者小米啦![:grin:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_biggrin.gif)。哈哈 仔细一想 非常现实的问题来了 木有银子……点点点，我已经好长时间没赚银子了，应该有18年了吧……
+
+再再其次，22号是我19岁的生日，大宴宾客啊，603全体红辣椒ekezou。正当我们说笑的时候，旭哥被服务员端上来的西湖牛肉羹烫了，然后：
+![:shock:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_eek.gif)![:|](http://www.pantaothu.cn/wp-includes/images/smilies/icon_neutral.gif)![:x](http://www.pantaothu.cn/wp-includes/images/smilies/icon_mad.gif)![:cry:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_cry.gif)![:evil:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_evil.gif)
+我们![:evil:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_evil.gif)![:evil:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_evil.gif)![:evil:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_evil.gif)![:evil:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_evil.gif)![:evil:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_evil.gif)![:evil:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_evil.gif)
+服务员![:|](http://www.pantaothu.cn/wp-includes/images/smilies/icon_neutral.gif)![:|](http://www.pantaothu.cn/wp-includes/images/smilies/icon_neutral.gif)![:|](http://www.pantaothu.cn/wp-includes/images/smilies/icon_neutral.gif)![:cry:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_cry.gif)
+后来我就说了，我19岁这一年任重道远，肩负着旭哥如此的牺牲，必须要做出点成绩！
+
+再再其次，就是今天感冒，去图书馆没座……
+
+其实，这不是吐槽，不爽已经是我的常态了。有点哗众取宠的感觉![:arrow:](http://www.pantaothu.cn/wp-includes/images/smilies/icon_arrow.gif)不过正如这篇blog的标题所说，我必须要强迫自己写博，不然，就我这记性，以后连个回忆都没有。每周至少写一篇心情随笔+一篇技术文章，不然，哼哼~~
+
+下周貌似任务不轻
+
+
+
+	
+  1. 剪刀石头布销售工作；
+
+	
+  2. ioptimize的wp版本；
+
+	
+  3. 个人博客的主题+我yy的一个小插件。
+
+

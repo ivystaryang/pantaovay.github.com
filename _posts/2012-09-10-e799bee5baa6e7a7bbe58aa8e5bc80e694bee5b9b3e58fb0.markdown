@@ -1,0 +1,93 @@
+---
+comments: true
+date: 2012-09-10 14:15:48
+layout: post
+slug: '%e7%99%be%e5%ba%a6%e7%a7%bb%e5%8a%a8%e5%bc%80%e6%94%be%e5%b9%b3%e5%8f%b0'
+title: 百度移动开放平台
+wordpress_id: 315
+categories:
+- php
+- web
+- 编程
+tags:
+- 检测手机
+- 百度
+- 百度云开放平台
+- 百度云计算
+- 百度移动建站
+---
+
+[百度无线](http://mcloud.baidu.com/api)现在有两个功能：1、[移动建站平台](http://mcloud.baidu.com/yizhan/miopen)；2、[云浏览开放平台](http://mcloud.baidu.com/api)。二者都可以很快的将站点转码为适合手机端的网站。它的合作伙伴都还挺厉害的，包括搜狐微博，海豚浏览器，团800等等。
+
+首先说一下**移动建站平台**，百度宣称：10分钟0成本，简单配置就可以为自己的网站量身定做手机版页面。事实上，也确实是需要十分钟来生成你的网站。 具体操作步骤：
+
+
+
+	
+  1. [http://mcloud.baidu.com/yizhan/miopen](http://mcloud.baidu.com/yizhan/miopen)；
+
+	
+  2. 点击“**立即创建**”；（需要百度账号升级为开发者，提交一个[申请](http://developer.baidu.com/)就可以）
+
+	
+  3. **添加一个站点**
+
+[caption id="attachment_316" align="alignnone" width="300"][![百度移动建站指南](http://pantaothu2-wordpress.stor.sinaapp.com/uploads/2012/09/add-300x83.png)](http://pantaothu2-wordpress.stor.sinaapp.com/uploads/2012/09/add.png) 百度移动建站步骤[/caption]
+
+	
+  4. **验证站点**，我这是使用的是html标签验证，修改wp所使用的主题文件的header.php文件，将它提示的元数据写到<head></head>中去。上传到主机，然后点击**开始验证**。
+
+[caption id="attachment_317" align="alignnone" width="300"][![网站验证](http://pantaothu2-wordpress.stor.sinaapp.com/uploads/2012/09/validator-300x148.png)](http://pantaothu2-wordpress.stor.sinaapp.com/uploads/2012/09/validator.png) 百度网站验证[/caption]
+
+	
+  5. 验证之后就是移动建站，这个时候你可以选择相应的子域名对应你的手机站点，我这里选的是[m.pantaothu.cn](http://m.pantaothu.cn)，你也可以选3g，mobi等等。然后就是在注册域名的地方cname到yizhan.baidu.com。万网的如下：
+
+[caption id="attachment_318" align="alignnone" width="300"][![万网CNAME](http://pantaothu2-wordpress.stor.sinaapp.com/uploads/2012/09/cnamePNG-300x8.png)](http://pantaothu2-wordpress.stor.sinaapp.com/uploads/2012/09/cnamePNG.png) 万网CNAME[/caption]
+
+	
+  6. 等十分钟时候就可以了，你也可以到后台查看进度。本站效果：[http://m.pantaothu.cn/](http://m.pantaothu.cn/)。
+
+
+另外，百度也提供了**页面优化指南**，可以对项目进行删除、折叠、浮动处理；还可以申请合作变现。
+
+接下来是我想说的个人比较喜欢的[云浏览开放平台](http://mcloud.baidu.com/api)。 浏览开放平台是基于百度云端网页转码技术的服务平台，借助百度云浏览强大的结构化数据挖掘、移动浏览效果重构、终端适配等云端网页转码能力，帮助更多的移动应用/网站快速提升移动浏览体验，目前云浏览开放的服务种类：webapp浏览、无图省流量浏览、普通省流量浏览和全浏览（未开放）。我个人比较倾向于第一个浏览方式，但是每种实现的方法都一样。
+
+
+
+	
+  1. 申请[加入](http://mcloud.baidu.com/api/create_app)，填写一些信息而已；
+
+	
+  2. 看这个吧
+
+[caption id="attachment_319" align="alignnone" width="300"][![百度云浏览开放平台操作步骤](http://pantaothu2-wordpress.stor.sinaapp.com/uploads/2012/09/step-300x59.png)](http://pantaothu2-wordpress.stor.sinaapp.com/uploads/2012/09/step.png) 百度云浏览开放平台操作步骤[/caption]
+
+	
+  3. URL开放接口的基础URL为：mc.baidu.com/tc，使用起来也比较简单：要转码的页面URL为http://www.example.com/main/test.html，使用无图省量浏览，平台申请到的APPKEY为 myid，则通过访问http://mc.baidu.com/tc?pmode=Noimg&appkey=myid&src=http://www.example.com/main/test.html即可得到调用无图省略浏览页面。页面中所有的URL会被自动替换为拥有mc.baidu.com及包含来源页面中pmode和appkey参数的地址。例如调用无图省略浏览的原页面中包含指向 http://www.myfriend.com的链接，则得到的转码页面中，该链接会被转换为 http://mc.baidu.com/tc？pmode=Noimg&appkey=myid&src=http://www.myfriend.com经过测试只要将主域名作为src就可以实现整个站点的转码，并不需要对每张页面设置跳转。所以现在的问题是如何用手机访问[http://www.pantaothu.cn/](http://www.pantaothu.cn/ )跳转到百度的转码版本呢？
+  
+
+思路很简单，php判断是否是手机设备访问，如果是的话，将其跳转到 http://mc.baidu.com/tc?pmode=Noimg&appkey=myid&src=http://www.example.com/。
+
+	
+  4. php判断是不是手持设备网上教程很多，比如这个http://www.daqianduan.com/php-mobile/。一般来说通过判断HTTP_VIA来进行验证，目前此方法应该是迄今互联网上准确率最高、最简单的判断手机访问方法。另外，也有人通过HTTP_ACCEPT来验证。我在这里避开了这一点，推荐下面这个脚本：[http://detectmobilebrowsers.mobi/](http://detectmobilebrowsers.mobi/)
+如果不商用，比如个人站点的话，可以下载免费版，代价是发一条推文或者facebook状态。翻墙看[这里](http://www.pantaothu.cn/ipv6_tunnel_configuration_test_passes_t.html)。
+
+	
+  5. 下载该软件之后，将其脚本mobile_device_detect.php放到主题根目录下（随意），在index.php最上方添加如下代码：
+
+    
+    
+    
+    
+
+
+
+
+
+  6. 上面那一串串true、false对应不同的设备的显示情况，可以在官网自己设置。效果：[http://www.pantaothu.cn/](http://www.pantaothu.cn/)（手机）。这种更适合阅读，比移动建站更有优势。
+
+
+总的来说，百度这个云平台做的相当不错，推荐。另外，wp也可以通过插件来实现手机端，推荐：wp touch这个插件。效果可能还好一点。
+  
+
+本文提到的脚本和插件下载链接：[http://pan.baidu.com/share/link?shareid=27374&uk;=588378597](http://pan.baidu.com/share/link?shareid=27374&uk=588378597)

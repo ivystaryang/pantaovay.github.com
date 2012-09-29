@@ -1,0 +1,24 @@
+---
+comments: true
+date: 2012-08-03 18:13:54
+layout: post
+slug: '%e3%80%90lisp%e5%ad%a6%e4%b9%a0%e3%80%91%e8%b5%84%e6%ba%90%e5%88%86%e4%ba%ab'
+title: 【Lisp学习】资源分享
+wordpress_id: 4
+categories:
+- Lisp
+- 编程
+tags:
+- lisp
+- 学习
+---
+
+下定决心学习一种新的语言一般都是很蛋疼的，不过在看了《黑客与画家》这本书之后，我相信很多人都会对这个叫做Lisp的语言发生兴趣。毕竟，这是大神们极力推崇的一门语言。
+
+国内Lisp使用者 田春（网名是 冰河）翻译的那本《实用Lsip编程》据说是很不错的入门书籍，田春本人也是很霸气的一位神级人物，感兴趣的话，可以去他的网易博客膜拜。我在springer下载了这本书的英文原版，和大家分享一下吧：[http://www.kuaipan.cn/file/id_14318978583238735.htm](http://www.kuaipan.cn/file/id_14318978583238735.htm)
+
+另外，百度有个Lisp贴吧：[http://tieba.baidu.com/f?kw=lisp&fr=itb_favo&fp=favo](http://tieba.baidu.com/f?kw=lisp&fr=itb_favo&fp=favo)，现在人不多，问得问题也比较基础，正好，都是初学者，在一起交流，进步更快。
+
+Lisp之美：[http://www.ibm.com/developerworks/cn/java/j-cb02067.html](http://www.ibm.com/developerworks/cn/java/j-cb02067.html)
+
+为什么Lisp语言如此先进（译文）：[http://www.ruanyifeng.com/blog/2010/10/why_lisp_is_superior.html](http://www.ruanyifeng.com/blog/2010/10/why_lisp_is_superior.html)
