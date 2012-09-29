@@ -20,10 +20,10 @@ tags:
 
 对于**iis服务器**，在网站根目录下新建一个web.config文件，其实就是xml配置文件。
 
-'<?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-<system.webServer>
-<rewrite>
+	<?xml version="1.0" encoding="UTF-8"?>
+	<configuration>
+	<system.webServer>
+	<rewrite>
 	<rules>
 		<rule name="301 3" stopProcessing="true">
 		<match url="^(.*)$" />
@@ -42,22 +42,24 @@ tags:
 		<action type="Redirect" url="http://www.pantaothu.cn/{R:0}" redirectType="Permanent" />
 		</rule>
 	</rules>
-</rewrite>
-</system.webServer>
-</configuration>`
+	</rewrite>
+	</system.webServer>
+	</configuration>
 
-第一个rule设置了3个跳转，将yygongjiao.com、yaoyaogongjiao.com和www.yaoyaogongjiao.com永久重定向到www.yygongjiao.com。而实际上它们对应的是同一个ip地址。第二个rule设置了一个跳转，将pantaothu.cn永久重定向到www.pantaothu.cn。只要域名解析到这个ip，就可以在这里将其重定向到其他地址。所以，从某种意义上来说，可以有专门的做301重定向的服务器，没有独立ip的孩纸就“有救”了。
+第一个rule设置了3个跳转，将`yygongjiao.com`、`yaoyaogongjiao.com`和`www.yaoyaogongjiao.com`永久重定向到`www.yygongjiao.com`。而实际上它们对应的是同一个ip地址。第二个rule设置了一个跳转，将pantaothu.cn永久重定向到www.pantaothu.cn。只要域名解析到这个ip，就可以在这里将其重定向到其他地址。所以，从某种意义上来说，可以有专门的做301重定向的服务器，没有独立ip的孩纸就“有救”了。
 
-对于**apache服务器**，有几种方法，我这里采用的是.htaccess文件。推荐一个.htaccess文件在线生成的网站http://www.wangqu.org/htaccess/，操作非常简单。
+对于**apache服务器**，有几种方法，我这里采用的是.htaccess文件。推荐一个.htaccess文件在线生成的网站`http://www.wangqu.org/htaccess/`，操作非常简单。
 
 **WWW域名的重定向**
 
-'<Files ~ "^.(htaccess|htpasswd)$">
-deny from all
-</Files>
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^(yygongjiao\.com)(:80)? [NC]
-RewriteRule ^(.*) http://www.yygongjiao.com/$1 [R=301,L]
-order deny,allow'
+	<Files ~ "^.(htaccess|htpasswd)$">
+		deny from all
+	</Files>
+	RewriteEngine on
+	RewriteCond %{HTTP_HOST} ^(yygongjiao\.com)(:80)? [NC]
+	RewriteRule ^(.*) http://www.yygongjiao.com/$1 [R=301,L]
+	order deny,allow
 
 另外这个网站还有其他很厉害的功能。需要了解原理的童鞋，看[这里](http://blog.wangqu.org/2010/07/htaccess-301-jump/)。还有正则表达式相关的知识，网上一大堆。
+
+**Add 2012-9-29**: 可以使用转发服务器进行301跳转，一般提供freedns的都会有这个服务，我用的是[FreeDNS](http://freedns.afraid.org/)
