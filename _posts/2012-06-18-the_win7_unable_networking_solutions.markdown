@@ -27,16 +27,15 @@ tags:
 > （4）重装
 
 3. 重置TCP/IP协议
-> 若要打开命令提示符，请单击**“开始”**，然后单击**“运行”**。在**“打开”**框中复制并粘贴（或键入）以下命令，然后按 Enter：	
-	'cmd'
+> 若要打开命令提示符，请单击**“开始”**，然后单击**“运行”**。在**“打开”**框中复制并粘贴（或键入）以下命令，然后按 Enter：`cmd`
 >
->在命令提示符下，复制并粘贴（或键入）以下命令，然后按 Enter：
->	
->	'netsh int ip reset c:resetlog.txt'
+> 在命令提示符下，复制并粘贴（或键入）以下命令，然后按 Enter：
+>
+> `netsh int ip reset c:resetlog.txt`
 >
 >**注意**：如果不希望指定日志文件的目录路径，请使用以下命令：
 >
->	netsh int ip reset resetlog.txt
+>` netsh int ip reset resetlog.txt`
 
 4. 重新启动计算机。
 
